@@ -1,4 +1,4 @@
-package com.hyukje.book.springboot.dto;
+package com.hyukje.book.springboot.web.dto;
 
 
 import lombok.Getter;
