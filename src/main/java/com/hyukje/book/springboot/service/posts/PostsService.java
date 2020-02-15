@@ -28,7 +28,7 @@ public class PostsService {
     @Transactional
     public Long update(Long id, PostsUpdateRequestDto requestDto){
         Posts posts = postsRepository.findById(id).orElseThrow(()->new IllegalArgumentException("사용자가 없습니다. id = "+id));
-        posts.update(requestDto.getTitle(),requestDto.getContent());
+        posts.update(requestDto.getTitle(),requestDto.getContent()); // 도메인 모델 사용
 
         return id;
     }
